@@ -1,0 +1,528 @@
+S Q L
+
+Structured Query Language
+
+Database - Collection of data
+
+SLQ Sever 2016 or above - Show you how to
+
+SQL Server - Database Engine - Stores/hosts the database
+
+Minimum requirements
+
+
+
+
+
+
+
+
+
+Be back at 9:32am PT 
+
+Type YES if you are back
+
+
+Remember to Mute your MIC
+
+
+
+
+
+
+
+
+
+
+
+
+Server --> DBMS --> Database(s) --> Tables --> Columns and rows
+
+
+DBMS 2016
+AventureWorks 2016
+SSSM 2017
+
+DBMS 2019
+AventureWorks 2019
+SSSM 2017
+
+
+
+We will be back at 01:10pm CT
+
+Type YES if you are back
+
+
+
+SSMS
+
+select @@version - SQL Server version
+
+
+Server --> DBMS --> Database(s) --> Tables --> Columns and rows
+
+
+DBMS - Database Management System - Software that hosts the database
+
+AventureWorks.bak file - Actual database
+SSMS - SQL Server Management system - Client that helps you to access the database
+
+AventureWorks.mdf
+AventureWorks.ndf
+
+Create - New DB
+Restore - from a backup
+
+
+
+
+
+Break - Be back 2:48pm CT 
+Type YES if you are back
+
+
+select * 
+from Students
+
+SELECT- Identifies which column
+
+* - ALL
+
+FROM Identies what table
+
+WHERE - Filter
+
+ORDER BY - Sort the records
+
+select StudentName, Birthdate 
+from Students
+where StudentName like 'fiona%' AND Birthdate >= '1/1/2000'
+
+select StudentName, Birthdate 
+from Students
+where StudentName = 'fiona%' OR Birthdate >= '1/1/2000'
+
+
+--Age > 21 years and above
+
+select StudentName, Birthdate 
+from Students
+where Birthdate >= '1/1/2000'
+order StudentName ASC
+
+select StudentName, Birthdate 
+from Students
+where Birthdate >= '1/1/2000'
+order by StudentName DESC
+
+a = 20
+b = 10
+
+Arithmetic Operators
+
+a+b = 20 ***  2010
+
+FirstName + LastName = FirstNameLastName CONCAT
+
+a - b = 10
+
+a * b = 200
+
+a / b = 2
+
+20 % 10 = gives us the reminder = 0
+
+5 / 2 = 2 reminder (%) 1
+
+select StudentName, Birthdate 
+from Students
+where StudentName = 'fiona'
+
+
+--Student Name that starts with fiona
+select StudentName, Birthdate 
+from Students
+where StudentName LIKE  'fiona%' 
+ex Fiona Kuria
+
+--Student Name that ends with fiona
+select StudentName, Birthdate 
+from Students
+where StudentName LIKE  '%fiona' 
+
+ex Kuria Fiona
+
+--Student Name contains fiona
+select StudentName, Birthdate 
+from Students
+where StudentName LIKE '%fiona%' 
+
+ex Kuria Fiona, Fiona Kuria, Maryfiona
+
+
+
+
+
+1/17/2021
+SQL Server Express 2016
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=56840
+
+
+
+
+
+
+
+
+Let's get back 11:25 PST
+
+
+
+
+
+
+
+
+
+1/23/2021
+Class will start @ 10:05am CT
+
+
+
+
+
+
+
+
+
+
+
+
+Be back @01:35pm CT
+
+Type YES if you are back
+
+Alice
+murundemutia@gmail.com
+Carol
+ck1blessed@gmail.com
+Pam
+omanipam@yahoo.com
+Elvis
+elviswasilwa@gmail.com
+Rose
+rkitisya@gmail.com
+Ben
+boriedo@gmail.com
+Temmy
+temmytia@gmail.com
+
+SELECT, FROM - keywords
+
+select *| Columns
+From Database.Schema.TableName
+
+[Database Name].[Schema].TableName
+
+Isacc_Databases --> Database Name
+
+Schema --> dbo
+
+Table Name -->[Move Databases]
+
+
+What is database name?
+[AdventureWorksLT2012]
+
+What is [OrderQty]?
+Column
+
+What is the datatype of [OrderQty] column?
+Smallint
+
+Does [OrderQty] allow NULL?
+NO 
+
+What is the Primary Key(PK) in [SalesOrderDetail]?
+SalesOrderID and SalesOrderDetailID
+
+Foreign Key (FK) - ProductID
+
+whats the difference between = and like
+= --> Exact
+like--> part of 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Be back 03:07 PM CT
+Type YES if you are back
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1/24/2021
+Class will start @ 10:05am CT
+Type YES when you join
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What is database name?
+SmartDate
+
+What is StudentName?
+column
+
+What is the datatype of StudentName column?
+Text
+
+Does StudentName column allow NULL?
+Yes
+
+What is the Primary Key(PK) in Student table?
+Student
+
+Foreign Key (FK) - 
+
+whats the difference between = and like
+= --> Exact
+like--> part of/ exact
+
+
+
+
+
+
+
+Task 1
+Open SSMS
+Connect to the Database Engine
+Type YES
+
+Task 2 
+Create Database
+Steps
+1. Right Click on Databases
+2. Select New Database
+3. Database Name: SmartData
+4. Click OK button
+5. Right Click on Databases and select Refresh
+
+
+Task 3
+Create Table
+1. Right Click on Tables
+2. Select New Table
+3. On the Properties Window, Change Table1 to Students
+
+Tip: If you don't see Properties Window
+	i. Go to View menu
+	ii. Select Properties Window
+
+4. On the Text Editor, Create Columns
+	i. StudentID
+	ii. StudentName
+	iii. StudentNumber
+	iv. BirthDate
+	v. CreatedDate
+	vi. CreatedBy
+5. Save 
+
+Let's take a break (15 minutes)
+
+Class Work (15 minutes)
+1. Set StudentID as Primary Key (PK)
+2. Add Columns & DataType to Students Table
+	i. Gender (Male, Female, Other)
+	ii. Height (5 11', 6, 7)
+	iii. Nationality
+	iv. Race
+	v. City
+	vi. State (CA, TX,)
+	vii. Zip Code (XXXX-XXXXX)
+3. Save
+
+Tip: To change column/column datatype - Right Click on the Students table and select Design
+
+Be back at 11:37am CT
+
+
+Tip: Database Prevents changes to the table/Object.
+Solution: Drop & Receate the object - Not good solution because you may loose your data
+
+Source: built in functionality
+
+Best Solution: Change the settings
+Steps
+1. Go to Tools Menu
+2. Select Options... Open window will popup
+3. Go to Designers
+4. UnCheck "Prevent saving changes that require table recreation
+5. Click OK button
+
+Qn: How do I insert a coloum in the middle of the table ? eg I just realised i did not add nationality- 
+ANS: Right Click and Insert Colum OR Add the column and the end and Drag and Drop
+
+
+Task 4
+1. Open Query Editor - Click New Query button
+2. Query
+USE SmartData
+GO
+
+3. View Student Data
+SELECT * FROM Students
+
+4. Submit the command - Click !Execute button
+
+Type YES
+
+
+Task 5
+Auto Increment StudentID
+Steps
+1. Right Click on Students table, select Design
+2. Select StudentID column - Click on StudentID
+3. Go to column Properties window
+4. Expand Identity Specification
+5. Change (Is Identity) to YES
+6. Hit Tab Key 
+6. Save
+7. Close the table design window
+
+Task 6
+Enter Data into Student table
+Steps
+1. Right Click on Students table
+2. Select "Edit Top 200 rows"
+3. Enter Data
+
+Class Work (15 minutes)
+Enter 10 records
+Follow the steps on Task 6
+
+Lunch Break (30 minutes)
+
+Let's get back at 2:02pm CT
+Type YES if you are back
+
+
+
+Let's get back at 01:25pm 
+Type YES when you are back
+
+Task 7
+Tables (3)
+Table Name: Courses 
+CourseID - int, Primary Key
+Course Name -
+CreatedBy - 
+CreatedDate -
+
+
+Table Name: Hobbies 
+HobbyID - int, Primary Key
+Hobby - 
+
+Table Name: StudentHobbies
+HobbyID - int (Foreign Key)
+StudentID int (Foreign Key)
+
+
+Task 8
+Set Default Value - Courses.CreatedDate
+Steps
+1. Right Click on Courses table, select Design
+2. Select CreatedDate column 
+3. Go to Column Properties window
+4. Under General, Update Default Value or Binding to GETDATE()
+5. Save
+
+Task9
+Insert Data using a SQL
+1. Open New Query
+2. Use Database
+3. Write SQL
+
+USE SmartData
+GO
+
+INSERT INTO Courses(CourseName, CreatedBy)
+VALUES('SQL Introduction', 'Erick')
+
+INSERT INTO Courses(CourseName, CreatedBy)
+VALUES('Business Analysis', 'Erick')
+
+SELECT * FROM Courses
+
+Syntax:
+INSERT INTO TableName(ColumnName1, ColumnName2)
+VALUES('Value1', 'Value2')
+
+
+
+
+
+
+
+
+
+Add Active  bit - 0
+
+Insert Data
+
+Relationship
+
+How to generate Script
+
+
+
+
+
+
+
+
+
+
