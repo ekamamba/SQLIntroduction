@@ -1,13 +1,14 @@
-USE SmartData
-GO
-
 /*
 Author: Erick Kamamba 
 Twitter: @ErickKamamba
 Created On: 1/26/2021
-Updated On: 1/26/2021
+Updated On: 1/27/2021
 Description: This SQL inserts hobby list to the Students table
 */
+
+
+USE SmartData
+GO
 
 insert into Students(StudentName, StudentNumber, BirthDate, Gender, Nationality, Race, City, State,ZipCode, CreatedBy, CreatedDate)
 values('Frank Donald','SMT003', '4/5/1999', 'Male','Algerian','White', 'Anaheim','CA','12345', 'Erick', GETDATE()),
