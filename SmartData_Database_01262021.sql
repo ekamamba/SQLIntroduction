@@ -1,3 +1,11 @@
+/*
+Author: Erick Kamamba 
+Twitter: @ErickKamamba
+Created On: 1/26/2021
+Updated On: 1/27/2021
+Description: This SQL inserts Databases and tables
+*/
+
 USE [master]
 GO
 
