@@ -1,6 +1,3 @@
-USE [SmartData]
-GO
-
 /*
 Author: Erick Kamamba 
 Twitter: @ErickKamamba
@@ -8,6 +5,9 @@ Created On: 1/26/2021
 Updated On: 1/26/2021
 Description: This SQL inserts hobby list to the Hobbies table
 */
+
+USE [SmartData]
+GO
 
 INSERT INTO Hobbies(Hobby)
 VALUES ('Reading'),
