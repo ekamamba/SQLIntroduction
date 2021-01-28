@@ -1,13 +1,13 @@
-use SmartData
-go
-
 /*
 Author: Erick Kamamba 
 Twitter: @ErickKamamba
 Created On: 1/26/2021
-Updated On: 1/26/2021
+Updated On: 1/27/2021
 Description: This SQL inserts data to the StudentHobbies table
 */
+
+use SmartData
+go
 
 INSERT INTO StudentHobbies (StudentID, HobbyID) 
 VALUES (1, 1),(1, 2),(1, 3),(1, 4),(1, 5),(2, 2),
