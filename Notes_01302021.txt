@@ -1,0 +1,883 @@
+S Q L
+
+Structured Query Language
+
+Database - Collection of data
+
+SLQ Sever 2016 or above - Show you how to
+
+SQL Server - Database Engine - Stores/hosts the database
+
+Minimum requirements
+
+
+
+
+
+
+
+
+
+Be back at 9:32am PT 
+
+Type YES if you are back
+
+
+Remember to Mute your MIC
+
+
+
+
+
+
+
+
+
+
+
+
+Server --> DBMS --> Database(s) --> Tables --> Columns and rows
+
+
+DBMS 2016
+AventureWorks 2016
+SSSM 2017
+
+DBMS 2019
+AventureWorks 2019
+SSSM 2017
+
+
+
+We will be back at 01:10pm CT
+
+Type YES if you are back
+
+
+
+SSMS
+
+select @@version - SQL Server version
+
+
+Server --> DBMS --> Database(s) --> Tables --> Columns and rows
+
+
+DBMS - Database Management System - Software that hosts the database
+
+AventureWorks.bak file - Actual database
+SSMS - SQL Server Management system - Client that helps you to access the database
+
+AventureWorks.mdf
+AventureWorks.ndf
+
+Create - New DB
+Restore - from a backup
+
+
+
+
+
+Break - Be back 2:48pm CT 
+Type YES if you are back
+
+
+select * 
+from Students
+
+SELECT- Identifies which column
+
+* - ALL
+
+FROM Identies what table
+
+WHERE - Filter
+
+ORDER BY - Sort the records
+
+select StudentName, Birthdate 
+from Students
+where StudentName like 'fiona%' AND Birthdate >= '1/1/2000'
+
+select StudentName, Birthdate 
+from Students
+where StudentName = 'fiona%' OR Birthdate >= '1/1/2000'
+
+
+--Age > 21 years and above
+
+select StudentName, Birthdate 
+from Students
+where Birthdate >= '1/1/2000'
+order StudentName ASC
+
+select StudentName, Birthdate 
+from Students
+where Birthdate >= '1/1/2000'
+order by StudentName DESC
+
+a = 20
+b = 10
+
+Arithmetic Operators
+
+a+b = 20 ***  2010
+
+FirstName + LastName = FirstNameLastName CONCAT
+
+a - b = 10
+
+a * b = 200
+
+a / b = 2
+
+20 % 10 = gives us the reminder = 0
+
+5 / 2 = 2 reminder (%) 1
+
+select StudentName, Birthdate 
+from Students
+where StudentName = 'fiona'
+
+
+--Student Name that starts with fiona
+select StudentName, Birthdate 
+from Students
+where StudentName LIKE  'fiona%' 
+ex Fiona Kuria
+
+--Student Name that ends with fiona
+select StudentName, Birthdate 
+from Students
+where StudentName LIKE  '%fiona' 
+
+ex Kuria Fiona
+
+--Student Name contains fiona
+select StudentName, Birthdate 
+from Students
+where StudentName LIKE '%fiona%' 
+
+ex Kuria Fiona, Fiona Kuria, Maryfiona
+
+
+
+
+
+1/17/2021
+SQL Server Express 2016
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=56840
+
+
+
+
+
+
+
+
+Let's get back 11:25 PST
+
+
+
+
+
+
+
+
+
+1/23/2021
+Class will start @ 10:05am CT
+
+
+
+
+
+
+
+
+
+
+
+
+Be back @01:35pm CT
+
+Type YES if you are back
+
+Alice
+murundemutia@gmail.com
+Carol
+ck1blessed@gmail.com
+Pam
+omanipam@yahoo.com
+Elvis
+elviswasilwa@gmail.com
+Rose
+rkitisya@gmail.com
+Ben
+boriedo@gmail.com
+Temmy
+temmytia@gmail.com
+
+SELECT, FROM - keywords
+
+select *| Columns
+From Database.Schema.TableName
+
+[Database Name].[Schema].TableName
+
+Isacc_Databases --> Database Name
+
+Schema --> dbo
+
+Table Name -->[Move Databases]
+
+
+What is database name?
+[AdventureWorksLT2012]
+
+What is [OrderQty]?
+Column
+
+What is the datatype of [OrderQty] column?
+Smallint
+
+Does [OrderQty] allow NULL?
+NO 
+
+What is the Primary Key(PK) in [SalesOrderDetail]?
+SalesOrderID and SalesOrderDetailID
+
+Foreign Key (FK) - ProductID
+
+whats the difference between = and like
+= --> Exact
+like--> part of 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Be back 03:07 PM CT
+Type YES if you are back
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1/24/2021
+Class will start @ 10:05am CT
+Type YES when you join
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What is database name?
+SmartDate
+
+What is StudentName?
+column
+
+What is the datatype of StudentName column?
+Text
+
+Does StudentName column allow NULL?
+Yes
+
+What is the Primary Key(PK) in Student table?
+Student
+
+Foreign Key (FK) - 
+
+whats the difference between = and like
+= --> Exact
+like--> part of/ exact
+
+
+
+
+
+
+
+Task 1
+Open SSMS
+Connect to the Database Engine
+Type YES
+
+Task 2 
+Create Database
+Steps
+1. Right Click on Databases
+2. Select New Database
+3. Database Name: SmartData
+4. Click OK button
+5. Right Click on Databases and select Refresh
+
+
+Task 3
+Create Table
+1. Right Click on Tables
+2. Select New Table
+3. On the Properties Window, Change Table1 to Students
+
+Tip: If you don't see Properties Window
+	i. Go to View menu
+	ii. Select Properties Window
+
+4. On the Text Editor, Create Columns
+	i. StudentID
+	ii. StudentName
+	iii. StudentNumber
+	iv. BirthDate
+	v. CreatedDate
+	vi. CreatedBy
+5. Save 
+
+Let's take a break (15 minutes)
+
+Class Work (15 minutes)
+1. Set StudentID as Primary Key (PK)
+2. Add Columns & DataType to Students Table
+	i. Gender (Male, Female, Other)
+	ii. Height (5 11', 6, 7)
+	iii. Nationality
+	iv. Race
+	v. City
+	vi. State (CA, TX,)
+	vii. Zip Code (XXXX-XXXXX)
+3. Save
+
+Tip: To change column/column datatype - Right Click on the Students table and select Design
+
+Be back at 11:37am CT
+
+
+Tip: Database Prevents changes to the table/Object.
+Solution: Drop & Receate the object - Not good solution because you may loose your data
+
+Source: built in functionality
+
+Best Solution: Change the settings
+Steps
+1. Go to Tools Menu
+2. Select Options... Open window will popup
+3. Go to Designers
+4. UnCheck "Prevent saving changes that require table recreation
+5. Click OK button
+
+Qn: How do I insert a coloum in the middle of the table ? eg I just realised i did not add nationality- 
+ANS: Right Click and Insert Colum OR Add the column and the end and Drag and Drop
+
+
+Task 4
+1. Open Query Editor - Click New Query button
+2. Query
+USE SmartData
+GO
+
+3. View Student Data
+SELECT * FROM Students
+
+4. Submit the command - Click !Execute button
+
+Type YES
+
+
+Task 5
+Auto Increment StudentID
+Steps
+1. Right Click on Students table, select Design
+2. Select StudentID column - Click on StudentID
+3. Go to column Properties window
+4. Expand Identity Specification
+5. Change (Is Identity) to YES
+6. Hit Tab Key 
+6. Save
+7. Close the table design window
+
+Task 6
+Enter Data into Student table
+Steps
+1. Right Click on Students table
+2. Select "Edit Top 200 rows"
+3. Enter Data
+
+Class Work (15 minutes)
+Enter 10 records
+Follow the steps on Task 6
+
+Lunch Break (30 minutes)
+
+Let's get back at 2:02pm CT
+Type YES if you are back
+
+
+
+Let's get back at 01:25pm 
+Type YES when you are back
+
+Task 7
+Tables (3)
+Table Name: Courses 
+CourseID - int, Primary Key
+Course Name -
+CreatedBy - 
+CreatedDate -
+
+
+Table Name: Hobbies 
+HobbyID - int, Primary Key
+Hobby - 
+
+Table Name: StudentHobbies
+HobbyID - int (Foreign Key)
+StudentID int (Foreign Key)
+
+
+Task 8
+Set Default Value - Courses.CreatedDate
+Steps
+1. Right Click on Courses table, select Design
+2. Select CreatedDate column 
+3. Go to Column Properties window
+4. Under General, Update Default Value or Binding to GETDATE()
+5. Save
+
+Task9
+Insert Data using a SQL
+1. Open New Query
+2. Use Database
+3. Write SQL
+
+USE SmartData
+GO
+
+INSERT INTO Courses(CourseName, CreatedBy)
+VALUES('SQL Introduction', 'Erick')
+
+INSERT INTO Courses(CourseName, CreatedBy)
+VALUES('Business Analysis', 'Erick')
+
+SELECT * FROM Courses
+
+Syntax:
+INSERT INTO TableName(ColumnName1, ColumnName2)
+VALUES('Value1', 'Value2')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1/30/2021
+
+Class will start at 10:05am CT
+Type YES if you are here
+
+USE SmartData
+GO
+
+Select [Course Name], CreatedBy from Courses
+
+Courses Table
+Column: [Course Name]
+
+select 
+Where clause - Filters the records
+Order By - Sorts the records: ASC/DESC
+
+
+
+Insert - inserts data into the database
+Multiple at the same time
+
+
+
+
+
+Select GetDate() - Date & Time - Local 
+
+Task 1: COUNT()
+1. Open SSMS/ Connect to the Database Engine
+2. Open New Query
+3. Use [SmartData]
+4. Hit Execute
+5. Type this query
+
+SELECT COUNT(*)
+  FROM [SmartData].[dbo].[Students]
+5. Execute SQL
+6. Inspect the results
+7. Use WHERE clause
+
+--all students that live in CA
+SELECT COUNT(*)
+FROM [SmartData].[dbo].Students
+WHERE [State] = 'CA'
+
+COUNT() - Counts the total number of records
+- Doen NOT count NULL
+
+SELECT COUNT(*)
+  FROM [SmartData].[dbo].[Students]
+WHERE [Height] IS NULL 
+
+SELECT COUNT(StudentID)
+FROM [SmartData].[dbo].[Students]
+
+
+Task 2: Concantenate
+1. Type this SQL
+SELECT CONCAT(StudentName, ' (', StudentNumber,')')
+  FROM [SmartData].[dbo].[Students]
+
+2. Class Work (5 minutes)
+Columns: StudentName, [Address] = City, [State] ZipCode 
+					John Smith, 	Los Angelos, CA 92001
+
+2:52pm
+ANS:
+SELECT StudentName, CONCAT(City, ', ', [State],' ', ZipCode) as [Address]
+  FROM [SmartData].[dbo].[Students]
+
+
+
+Be back at 11:15am CT
+
+
+Task 3: Alias
+
+SELECT StudentName as [Full Name],  [Student #] = StudentNumber, City, State, ZipCode as [Zip Code]
+  FROM [SmartData].[dbo].[Students] Stud
+
+
+Task 4: Distinct
+1. Open New Query
+2. use AdventureWorksLT2012
+3. Type this SQL
+
+select distinct FirstName, LastName from SalesLT. Customer
+order by FirstName, LastName
+
+4. Execute
+
+Task 5: Grouping
+SUM - Summation of the records
+AVG - Summation/Number of records
+
+1,2,3 
+
+AVG = SUM/Count = (1+2+3)/3 = 2
+
+MIN = 1
+
+MAX = 3
+
+COUNT - Total # of set of values
+
+use AdventureWorksLT2012
+go
+
+select CustomerID, TotalDue from SalesLT. SalesOrderHeader
+where CustomerID  = 29568 OR CustomerID = 30089 OR CustomerID = 30027
+
+select max(TotalDue) from SalesLT. SalesOrderHeader
+where CustomerID  = 29568 OR CustomerID = 30089 OR CustomerID = 30027
+
+select min(TotalDue) from SalesLT. SalesOrderHeader
+where CustomerID  = 29568 OR CustomerID = 30089 OR CustomerID = 30027
+
+select count(TotalDue) from SalesLT. SalesOrderHeader
+where CustomerID  = 29568 OR CustomerID = 30089 OR CustomerID = 30027
+
+select SUM(TotalDue)/count(TotalDue) from SalesLT. SalesOrderHeader
+where CustomerID  = 29568 OR CustomerID = 30089 
+--OR CustomerID = 30027
+
+select AVG(TotalDue) from SalesLT. SalesOrderHeader
+where CustomerID  = 29568 OR CustomerID = 30089 OR CustomerID = 30027
+
+select SUM(TotalDue) from SalesLT. SalesOrderHeader
+where CustomerID  = 29568 OR CustomerID = 30089 OR CustomerID = 30027
+
+--Class Work - 3 minutes 3:10pm CT
+-- select Statement: Select ALL orders,SalesLT. SalesOrderHeader sort by TotalDue ASC
+
+select TotalDue,* from SalesLT. SalesOrderHeader Ord
+order by Ord.TotalDue
+
+select AVG(TotalDue) from SalesLT. SalesOrderHeader
+
+select SUM(TotalDue)/ COUNT(TotalDue)  from SalesLT. SalesOrderHeader
+
+
+--INSERT : One row at a time
+
+INSERT INTO StudentHobbies(StudentID, HobbyID)
+VALUES(16,27)
+
+--INSERT : Multiple rows at one time
+
+INSERT INTO StudentHobbies(StudentID, HobbyID)
+VALUES(16,20), 
+			(16,27),
+			(16,19),
+			(14,15)
+
+-- SELECT INTO
+select * from Students
+ WHERE Race != 'White'
+
+ select * from StudentRace
+
+SELECT StudentID, StudentName, StudentNumber, Race
+INTO StudentRace
+ FROM Students
+ WHERE Race != 'White'
+
+UPDATE StudentS
+SET Height = 5
+WHERE StudentID = 4
+
+
+-- DELETE
+
+DELETE FROM StudentTest
+WHERE STUDENTID = 12
+
+INSERT INTO Studenttest
+ select * from StudentS
+
+Use master
+go
+
+create table TEST(ID int, Name varchar(10))
+
+
+use smartdatatest
+go
+
+--CREATE TABLE TEST(ID int, Name varchar(10))
+
+ALTER TABLE TEST
+ADD Title varchar(50) 
+
+SELECT * FROM TEST
+
+
+
+Be back 1:05pm
+Enjoy your lunch
+Type YES when you are back
+
+
+use smartdatatest
+go
+
+--CREATE TABLE TEST(ID int, Name varchar(10))
+--Alter table
+ALTER TABLE TEST
+ADD Title varchar(50) 
+
+-- Add New Column
+
+ALTER TABLE TEST
+ADD Title varchar(250) 
+
+
+-- ALter Column
+ALTER TABLE TEST
+ALTER COLUMN Title varchar(250) 
+
+--Drop Column
+ALTER TABLE TEST
+DROP COLUMN Title
+
+SELECT * FROM TEST
+
+--Drop Table
+
+DROP TABLE TEST
+
+
+--Drop Database
+
+DROP DATABASE SmartDataTest
+
+
+--JOIN
+
+--INNER JOIN
+
+SELECT Cust.CustomerID, CustomerName = CONCAT(FirstName, ' ', LastName), Cust.EmailAddress, PurchaseOrderNumber, TotalDue 
+FROM SALESLT.CUSTOMER Cust
+JOIN SalesLT. SalesOrderHeader Ord ON Cust.CustomerID = Ord.CustomerID
+
+--Common Column: CustomerID
+
+select * from SALESLT.CUSTOMER
+
+SELECT Cust.CustomerID, CustomerName = CONCAT(FirstName, ' ', LastName), Cust.Phone, PurchaseOrderNumber, TotalDue 
+FROM SALESLT.CUSTOMER Cust
+JOIN SalesLT. SalesOrderHeader Ord ON Cust.CustomerID = Ord.CustomerID
+
+
+SELECT Cust.CustomerID, CustomerName = CONCAT(FirstName, ' ', LastName), Cust.EmailAddress, PurchaseOrderNumber, TotalDue 
+FROM SALESLT.CUSTOMER Cust
+LEFT JOIN SalesLT. SalesOrderHeader Ord ON Cust.CustomerID = Ord.CustomerID
+
+SELECT Cust.CustomerID, Ord.CustomerID, Cust.EmailAddress, PurchaseOrderNumber, TotalDue 
+FROM SALESLT.CUSTOMER Cust
+RIGHT JOIN SalesLT. SalesOrderHeader Ord ON Cust.CustomerID = Ord.CustomerID
+
+Break 15
+
+Open SSSM
+Connect to the database Engine
+
+Be back at 2:20 CT
+Type YES if yo are back
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Add Active  bit - 0
+
+Insert Data
+
+Relationship
+
+How to generate Script
+
+Backup
+
+View
+
+Update 
+
+Delete
+
+
+
+
+
+
+
+
+
+
+
+Assignment
+Find student having same hobbies in one table
+INSERT INTO `tbl_hobby` (`person_id`, `hobby_id`) VALUES
+(1, 1),(1, 2),(1, 3),(1, 4),(1, 5),(2, 2),
+(2, 3),(2, 4),(3, 1),(3, 2),(3, 3),(3, 4),
+(4, 1),(4, 3),(4, 4),(5, 1),(5, 5),(5, 9),
+(6, 2),(6, 3),(6, 4),(7, 1),(7, 3),(7, 7),
+(8, 2),(8, 3),(8, 4),(9, 1),(9, 2),(9, 3),
+(9, 4),(10, 1),(10, 5),(10, 9),(10, 11);
+
+Expert result: (2 and 6 and 8 same, 3 and 9 same)
+
+select hobbies, group_concat(person_id order by person_id) as persons
+from
+(
+  select person_id, group_concat(hobby_id order by hobby_id) as hobbies
+  from tbl_hobby
+  group by person_id
+) persons
+group by hobbies
+having count(*) > 1
+order by hobbies;
+
+select p1.person_id as person 1, p2.person_id as person2
+from
+(
+  select person_id, group_concat(hobby_id order by hobby_id) as hobbies
+  from tbl_hobby
+  group by person_id
+) p1
+join
+(
+  select person_id, group_concat(hobby_id order by hobby_id) as hobbies
+  from tbl_hobby
+  group by person_id
+) p2 on p2.person_id > p1.person_id and p2.hobbies = p1.hobbies
+order by person1, person2;
+
+select distinct t1.person_id, t2.person_id
+from tbl_hobby t1
+join tbl_hobby t2
+  on t1.person_id < t2.person_id
+where 2 = all (select count(*)
+               from tbl_hobby 
+               where person_id in (t1.person_id, t2.person_id)
+               group by hobby_id);
+
+
+
+
