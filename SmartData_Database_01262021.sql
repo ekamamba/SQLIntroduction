@@ -11,21 +11,11 @@ GO
 
 /****** Object:  Database [SmartData]    Script Date: 1/26/2021 9:23:26 PM ******/
 CREATE DATABASE [SmartData]
- CONTAINMENT = NONE
- ON  PRIMARY 
-( NAME = N'SmartData', FILENAME = N'G:\Data\SmartData.mdf' , SIZE = 3072KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
- LOG ON 
-( NAME = N'SmartData_log', FILENAME = N'Z:\Logs\SmartData_log.ldf' , SIZE = 1280KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
-GO
+
 
 ALTER DATABASE [SmartData] SET COMPATIBILITY_LEVEL = 110
 GO
 
-IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
-begin
-EXEC [SmartData].[dbo].[sp_fulltext_database] @action = 'enable'
-end
-GO
 
 ALTER DATABASE [SmartData] SET ANSI_NULL_DEFAULT OFF 
 GO
